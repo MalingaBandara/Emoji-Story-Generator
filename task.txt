@@ -1,0 +1,20 @@
+interface EmojiStory {
+ id: string;
+ emojiSequence: string[];
+ translation: string;
+ authorNickname: string;
+ likes: number;
+ createdAt: Date;
+}
+
+interface Translation {
+ storyId: string;
+ translation: string;
+ votes: number;
+}
+
+// Translation rules example
+interface TranslationRule {
+ pattern: string[];
+ templates: string[];
+}
